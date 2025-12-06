@@ -33,10 +33,10 @@ for i in range(3, 271):
         try:
             photo_element = driver.find_element(By.XPATH, f"//html/body/form/div[3]/div[2]/div[2]/div[2]/div[4]/div[{i}]/div[{j}]/div[1]/input")
 
-            img_url = photo_element.get_attribute("src")
+            image_url = photo_element.get_attribute("src")
             name = photo_element.get_attribute("alt").replace("/", "_").replace("\\", "_")
 
-            response = requests.get(img_url)
+            response = requests.get(image_url)
             if response.status_code == 200:
                 file_path = os.path.join("photos", f"{name}.jpg")
                 with open(file_path, "wb") as f:
