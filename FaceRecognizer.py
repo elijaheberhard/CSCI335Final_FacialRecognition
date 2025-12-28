@@ -63,7 +63,7 @@ from PIL import Image
 from facenet_pytorch import MTCNN, InceptionResnetV1
 
 
-image_path = r"nick test.jpg"  #CHANGE TO SOMETHING ELSE
+image_path = r"jim carrey test.jpg"  #CHANGE TO SOMETHING ELSE
 CLASSIFIER_PATH = "face_classifier2.pkl" #includes celebrity faces
 
 if torch.cuda.is_available():
