@@ -1,19 +1,19 @@
-# 1. Activate (just in case)
+1
 .\.venv\Scripts\activate
 
-# 2. Force-reinstall your working dlib wheel (this fixes the broken dlib)
+2
 pip install "C:\Users\Eberh\OneDrive - Hendrix College\College Stuff\Sophomore 1st Semester\AI\Final Project\Program\dlib-19.22.99-cp310-cp310-win_amd64.whl" --force-reinstall
 
-# 3. Install the ONLY TensorFlow version that works with NumPy 1.x
+3
 pip install tensorflow==2.16.2 --no-cache-dir
 
-# 4. Lock NumPy to the version that works with both dlib and TF 2.16
+4
 pip install numpy==1.26.4 --force-reinstall
 
-# 5. Reinstall face-recognition (it will now use your good dlib)
+5
 pip install face-recognition --force-reinstall --no-deps
 
-# 6. (Optional) Clean up the warning
+6
 pip install "setuptools<81"
 
 
